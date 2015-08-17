@@ -5,17 +5,38 @@
         .directive('userInfoCard', function () {
             return {
                 restrict: "E",
-                scope: {
-                    a: "="
-                },
                 templateUrl: "directives/user.info.card.template.html",
+                scope: {
+                    user: "=chorra",
+                    chof: "@caca",
+
+                },
                 controller: function ($scope) {
+                    $scope.collapsed = false;
                     $scope.knightMe = function (user) {
                         user.rank = 'Knight';
                     };
+                    $scope.collapse = function () {
+                        $scope.collapsed = !$scope.collapsed;
+                    };
                 }
             };
-        });
+        })
+        .directive('userAddress', function () {
+            return {
+                restrict: "E",
+                templateUrl: "directives/user.address.template.html",
+                scope: true,
+                controller: function ($scope) {
+                    // $scope.collapsed = false;
+                    $scope.collapseAddress = function () {
+                        $scope.collapsed = !$scope.collapsed;
+                    };
+                }
+
+
+            }
+        })
 
 
 } ());
