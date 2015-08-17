@@ -7,14 +7,14 @@
                 restrict: "E",
                 templateUrl: "directives/user.info.card.template.html",
                 scope: {
-                    user: "=chorra",
+                    merde: "=chorraLarga",
                     chof: "@caca",
 
                 },
                 controller: function ($scope) {
                     $scope.collapsed = false;
-                    $scope.knightMe = function (user) {
-                        user.rank = 'Knight';
+                    $scope.knightMe = function (merde) {
+                        merde.rank = 'Knight';
                     };
                     $scope.collapse = function () {
                         $scope.collapsed = !$scope.collapsed;

@@ -1,14 +1,14 @@
 <div class="panel panel-primary">
     <div class="panel-heading" ng-click="collapse()">
-        {{ user.name }}
+        {{ merde.name }}
     </div>
     <div class="panel-body" ng-hide="collapsed">
         <user-address></user-address>
         <h4>Friends</h4>
         <u>
-            <li ng-repeat="friend in user.friends">{{ friend }}, {{ chof }}</li>
+            <li ng-repeat="friend in merde.friends">{{ friend }}, {{ chof }} <button ng-click="killFriend()">kill friend</button></li>
         </u><br>
-        <div ng-show="!!user.rank" class="">Rank: {{ user.rank}}</div>
-        <button ng-show="!user.rank" ng-click="knightMe(user)" class="btn btn-success">Knight me</button>
+        <div ng-show="!!merde.rank" class="">Rank: {{ merde.rank}}</div>
+        <button ng-show="!merde.rank" ng-click="knightMe(user)" class="btn btn-success">Knight me</button>
     </div>
 </div>

@@ -31,6 +31,10 @@
             };
             $scope.someString = "I am a string";
             $scope.anotherString = "I am another pretty string!";
+
+            $scope.wipeTheMotherfucker = function (motherfucker) {
+                friends.splice(friends.indexOf(motherfucker), 1);
+            };
         });
 
 
