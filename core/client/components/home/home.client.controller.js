@@ -32,8 +32,9 @@
             $scope.someString = "I am a string";
             $scope.anotherString = "I am another pretty string!";
 
-            $scope.wipeTheMotherfucker = function (motherfucker) {
-                friends.splice(friends.indexOf(motherfucker), 1);
+            $scope.putaMierda = 10;
+            $scope.reducePutaMierda = function () {
+                $scope.putaMierda -= 1;
             };
         });
 

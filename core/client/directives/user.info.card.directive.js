@@ -9,7 +9,7 @@
                 scope: {
                     merde: "=chorraLarga",
                     chof: "@caca",
-
+                    cut: "&"
                 },
                 controller: function ($scope) {
                     $scope.collapsed = false;
@@ -28,7 +28,7 @@
                 templateUrl: "directives/user.address.template.html",
                 scope: true,
                 controller: function ($scope) {
-                    // $scope.collapsed = false;
+                    $scope.collapsed = false;
                     $scope.collapseAddress = function () {
                         $scope.collapsed = !$scope.collapsed;
                     };

@@ -6,7 +6,7 @@
         <user-address></user-address>
         <h4>Friends</h4>
         <u>
-            <li ng-repeat="friend in merde.friends">{{ friend }}, {{ chof }} <button ng-click="killFriend()">kill friend</button></li>
+            <li ng-click="cut()" ng-repeat="friend in merde.friends">{{ friend }}, {{ chof }}</li>
         </u><br>
         <div ng-show="!!merde.rank" class="">Rank: {{ merde.rank}}</div>
         <button ng-show="!merde.rank" ng-click="knightMe(user)" class="btn btn-success">Knight me</button>
