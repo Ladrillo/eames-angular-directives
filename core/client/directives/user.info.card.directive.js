@@ -9,7 +9,7 @@
                 scope: {
                     merde: "=chorraLarga",
                     chof: "@caca",
-                    cut: "&"
+                    cut: "&niceShit"
                 },
                 controller: function ($scope) {
                     $scope.collapsed = false;
